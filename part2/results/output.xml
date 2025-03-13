@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-01-31T21:00:32.704388" rpa="false" schemaversion="5">
+<suite id="s1" name="ST CNX" source="C:\Users\khall\OneDrive\Bureau\RobotFrameWorkProject\SauceLabProject\part2\ST_CNX.robot">
+<test id="s1-t1" name="se connecter avec invalide user locked" line="30">
+<kw name="Ouvrir url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:33.505464" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-31T21:00:33.505464" elapsed="9.596033"/>
+</kw>
+<status status="PASS" start="2025-01-31T21:00:33.502474" elapsed="9.600025"/>
+</kw>
+<kw name="login user">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${champsUserName}</arg>
+<arg>50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-31T21:00:43.107482" elapsed="0.142622"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:43.251098" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
+<arg>${champsUserName}</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T21:00:43.250104" elapsed="0.311002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:43.562101" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${champsPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T21:00:43.562101" elapsed="0.196949"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:43.760048" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T21:00:43.759050" elapsed="0.175531"/>
+</kw>
+<arg>${locked_user}</arg>
+<arg>${passwordGeneral}</arg>
+<status status="PASS" start="2025-01-31T21:00:43.103491" elapsed="0.831090"/>
+</kw>
+<status status="PASS" start="2025-01-31T21:00:33.501475" elapsed="10.437096"/>
+</test>
+<test id="s1-t2" name="se connecter avec problem with user" line="34">
+<kw name="login user">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${champsUserName}</arg>
+<arg>50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-31T21:00:43.944553" elapsed="0.041890"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:43.987440" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>${champsUserName}</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T21:00:43.986443" elapsed="0.239360"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:44.227796" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${champsPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T21:00:44.226798" elapsed="0.277259"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:00:44.505056" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-31T21:00:44.504057" elapsed="0.266291"/>
+</kw>
+<arg>${error_with_user}</arg>
+<arg>${passwordGeneral}</arg>
+<status status="PASS" start="2025-01-31T21:00:43.943557" elapsed="0.826791"/>
+</kw>
+<status status="PASS" start="2025-01-31T21:00:43.940565" elapsed="0.830778"/>
+</test>
+<test id="s1-t3" name="se connecter avec valid user" line="36">
+<kw name="login user">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-31T21:01:27.766975" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6415202F5+28725]
+	(No symbol) [0x00007FF641482AE0]
+	(No symbol) [0x00007FF64131510A]
+	(No symbol) [0x00007FF6412EEEA5]
+	(No symbol) [0x00007FF641396F87]
+	(No symbol) [0x00007FF6413AFA52]
+	(No symbol) [0x00007FF64138FD53]
+	(No symbol) [0x00007FF64135A0E3]
+	(No symbol) [0x00007FF64135B471]
+	GetHandleVerifier [0x00007FF64184F30D+3366989]
+	GetHandleVerifier [0x00007FF6418612F0+3440688]
+	GetHandleVerifier [0x00007FF6418578FD+3401277]
+	GetHandleVerifier [0x00007FF6415EAAAB+858091]
+	(No symbol) [0x00007FF64148E74F]
+	(No symbol) [0x00007FF64148A304]
+	(No symbol) [0x00007FF64148A49D]
+	(No symbol) [0x00007FF641478B69]
+	BaseThreadInitThunk [0x00007FF8C65E7374+20]
+	RtlUserThreadStart [0x00007FF8C7FBCC91+33]
+</msg>
+<msg time="2025-01-31T21:01:27.835308" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6415202F5+28725]
+	(No symbol) [0x00007FF641482AE0]
+	(No symbol) [0x00007FF64131510A]
+	(No symbol) [0x00007FF6412EEEA5]
+	(No symbol) [0x00007FF641396F87]
+	(No symbol) [0x00007FF6413AFA52]
+	(No symbol) [0x00007FF64138FD53]
+	(No symbol) [0x00007FF64135A0E3]
+	(No symbol) [0x00007FF64135B471]
+	GetHandleVerifier [0x00007FF64184F30D+3366989]
+	GetHandleVerifier [0x00007FF6418612F0+3440688]
+	GetHandleVerifier [0x00007FF6418578FD+3401277]
+	GetHandleVerifier [0x00007FF6415EAAAB+858091]
+	(No symbol) [0x00007FF64148E74F]
+	(No symbol) [0x00007FF64148A304]
+	(No symbol) [0x00007FF64148A49D]
+	(No symbol) [0x00007FF641478B69]
+	BaseThreadInitThunk [0x00007FF8C65E7374+20]
+	RtlUserThreadStart [0x00007FF8C7FBCC91+33]
+</msg>
+<arg>${champsUserName}</arg>
+<arg>50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-31T21:00:44.778323" elapsed="43.098871">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6415202F5+28725]
+	(No symbol) [0x00007FF641482AE0]
+	(No symbol) [0x00007FF64131510A]
+	(No symbol) [0x00007FF6412EEEA5]
+	(No symbol) [0x00007FF641396F87]
+	(No symbol) [0x00007FF6413AFA52]
+	(No symbol) [0x00007FF64138FD53]
+	(No symbol) [0x00007FF64135A0E3]
+	(No symbol) [0x00007FF64135B471]
+	GetHandleVerifier [0x00007FF64184F30D+3366989]
+	GetHandleVerifier [0x00007FF6418612F0+3440688]
+	GetHandleVerifier [0x00007FF6418578FD+3401277]
+	GetHandleVerifier [0x00007FF6415EAAAB+858091]
+	(No symbol) [0x00007FF64148E74F]
+	(No symbol) [0x00007FF64148A304]
+	(No symbol) [0x00007FF64148A49D]
+	(No symbol) [0x00007FF641478B69]
+	BaseThreadInitThunk [0x00007FF8C65E7374+20]
+	RtlUserThreadStart [0x00007FF8C7FBCC91+33]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${champsUserName}</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-31T21:01:27.879196" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${champsPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-31T21:01:27.881204" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-31T21:01:27.885174" elapsed="0.000000"/>
+</kw>
+<arg>${valid_user}</arg>
+<arg>${passwordGeneral}</arg>
+<status status="FAIL" start="2025-01-31T21:00:44.775334" elapsed="43.155716">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6415202F5+28725]
+	(No symbol) [0x00007FF641482AE0]
+	(No symbol) [0x00007FF64131510A]
+	(No symbol) [0x00007FF6412EEEA5]
+	(No symbol) [0x00007FF641396F87]
+	(No symbol) [0x00007FF6413AFA52]
+	(No symbol) [0x00007FF64138FD53]
+	(No symbol) [0x00007FF64135A0E3]
+	(No symbol) [0x00007FF64135B471]
+	GetHandleVerifier [0x00007FF64184F30D+3366989]
+	GetHandleVerifier [0x00007FF6418612F0+3440688]
+	GetHandleVerifier [0x00007FF6418578FD+3401277]
+	GetHandleVerifier [0x00007FF6415EAAAB+858091]
+	(No symbol) [0x00007FF64148E74F]
+	(No symbol) [0x00007FF64148A304]
+	(No symbol) [0x00007FF64148A49D]
+	(No symbol) [0x00007FF641478B69]
+	BaseThreadInitThunk [0x00007FF8C65E7374+20]
+	RtlUserThreadStart [0x00007FF8C7FBCC91+33]
+</status>
+</kw>
+<status status="FAIL" start="2025-01-31T21:00:44.773337" elapsed="43.160706">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6415202F5+28725]
+	(No symbol) [0x00007FF641482AE0]
+	(No symbol) [0x00007FF64131510A]
+	(No symbol) [0x00007FF6412EEEA5]
+	(No symbol) [0x00007FF641396F87]
+	(No symbol) [0x00007FF6413AFA52]
+	(No symbol) [0x00007FF64138FD53]
+	(No symbol) [0x00007FF64135A0E3]
+	(No symbol) [0x00007FF64135B471]
+	GetHandleVerifier [0x00007FF64184F30D+3366989]
+	GetHandleVerifier [0x00007FF6418612F0+3440688]
+	GetHandleVerifier [0x00007FF6418578FD+3401277]
+	GetHandleVerifier [0x00007FF6415EAAAB+858091]
+	(No symbol) [0x00007FF64148E74F]
+	(No symbol) [0x00007FF64148A304]
+	(No symbol) [0x00007FF64148A49D]
+	(No symbol) [0x00007FF641478B69]
+	BaseThreadInitThunk [0x00007FF8C65E7374+20]
+	RtlUserThreadStart [0x00007FF8C7FBCC91+33]
+</status>
+</test>
+<doc>code factorisé</doc>
+<status status="FAIL" start="2025-01-31T21:00:32.707381" elapsed="55.239628"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="ST CNX" id="s1" pass="2" fail="1" skip="0">ST CNX</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-31T21:01:27.766975" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6415202F5+28725]
+	(No symbol) [0x00007FF641482AE0]
+	(No symbol) [0x00007FF64131510A]
+	(No symbol) [0x00007FF6412EEEA5]
+	(No symbol) [0x00007FF641396F87]
+	(No symbol) [0x00007FF6413AFA52]
+	(No symbol) [0x00007FF64138FD53]
+	(No symbol) [0x00007FF64135A0E3]
+	(No symbol) [0x00007FF64135B471]
+	GetHandleVerifier [0x00007FF64184F30D+3366989]
+	GetHandleVerifier [0x00007FF6418612F0+3440688]
+	GetHandleVerifier [0x00007FF6418578FD+3401277]
+	GetHandleVerifier [0x00007FF6415EAAAB+858091]
+	(No symbol) [0x00007FF64148E74F]
+	(No symbol) [0x00007FF64148A304]
+	(No symbol) [0x00007FF64148A49D]
+	(No symbol) [0x00007FF641478B69]
+	BaseThreadInitThunk [0x00007FF8C65E7374+20]
+	RtlUserThreadStart [0x00007FF8C7FBCC91+33]
+</msg>
+</errors>
+</robot>

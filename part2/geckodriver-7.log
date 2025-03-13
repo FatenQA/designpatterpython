@@ -1,0 +1,15 @@
+1738351437663	geckodriver	INFO	Listening on 127.0.0.1:51063
+1738351440765	mozrunner::runner	INFO	Running command: "C:\\Users\\khall\\.cache\\selenium\\firefox\\win64\\134.0.2\\firefox.exe" "--marionette" "--remote-debuggin ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\khall\\AppData\\Local\\Temp\\rust_mozprofile7F4ylB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1738351441747	Marionette	INFO	Marionette enabled
+1738351443377	Marionette	INFO	Listening on port 51071
+Read port: 51071
+WebDriver BiDi listening on ws://127.0.0.1:51064
+1738351444095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51064/devtools/browser/1581a2db-af52-44e6-975d-c96d6e305131
+console.warn: services.settings: main/tracking-protection-lists sync already running
+1738351515039	Marionette	INFO	Stopped listening on port 51071
+Dynamically enable window occlusion 1
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))

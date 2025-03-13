@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-01-28T20:28:15.955264" rpa="false" schemaversion="5">
+<suite id="s1" name="ST Connexion" source="C:\Users\khall\OneDrive\Bureau\RobotFrameWorkProject\SauceLabProject\ST_Connexion.robot">
+<test id="s1-t1" name="se connecter avec user locked" line="36">
+<kw name="Ouvrir le navigateur">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:16.512846" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T20:28:16.512846" elapsed="5.924010"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:16.511848" elapsed="5.925008"/>
+</kw>
+<kw name="Remplir le champ user_Name locked">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${champsUserName}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-28T20:28:22.439848" elapsed="2.216181"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:24.657030" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
+<arg>${champsUserName}</arg>
+<arg>${locked_user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T20:28:24.656029" elapsed="0.217616"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:22.438851" elapsed="2.435790"/>
+</kw>
+<kw name="Remplir le champ password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:24.876007" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${champsPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T20:28:24.874986" elapsed="0.176713"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:24.874986" elapsed="0.176713"/>
+</kw>
+<kw name="cliquer sur le bouton login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:25.053695" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T20:28:25.052696" elapsed="0.148604"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:25.052696" elapsed="0.149601"/>
+</kw>
+<tag>invalidpath</tag>
+<status status="PASS" start="2025-01-28T20:28:16.509825" elapsed="8.692472"/>
+</test>
+<test id="s1-t2" name="se connecter avec user problem" line="45">
+<kw name="Ouvrir le navigateur">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:25.207283" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T20:28:25.206286" elapsed="15.212580"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:25.205288" elapsed="15.214576"/>
+</kw>
+<kw name="Remplir le champ user_Name problem with user">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${champsUserName}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-28T20:28:40.421858" elapsed="0.050653"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:40.473508" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>${champsUserName}</arg>
+<arg>${error_with_user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T20:28:40.472511" elapsed="0.234373"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:40.420862" elapsed="0.287019"/>
+</kw>
+<kw name="Remplir le champ password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:40.708880" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${champsPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T20:28:40.708880" elapsed="0.160088"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:40.707881" elapsed="0.161087"/>
+</kw>
+<kw name="cliquer sur le bouton login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T20:28:40.870964" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T20:28:40.869966" elapsed="0.180524"/>
+</kw>
+<status status="PASS" start="2025-01-28T20:28:40.869966" elapsed="0.180524"/>
+</kw>
+<tag>invalidpath</tag>
+<status status="PASS" start="2025-01-28T20:28:25.204291" elapsed="15.847197"/>
+</test>
+<doc>cette suite de test traite l'epic avec connexion valide et invalide</doc>
+<meta name="Author">Faten</meta>
+<status status="PASS" start="2025-01-28T20:28:15.958255" elapsed="25.096227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">invalidpath</stat>
+</tag>
+<suite>
+<stat name="ST Connexion" id="s1" pass="2" fail="0" skip="0">ST Connexion</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
